@@ -13,7 +13,7 @@ Using the steps we covered in class, create the following pages for your Car col
 You will need to create the following files/folders:
   - [ ] Virtual Environment
   - [ ] Main Package Folder (eg phonebook)
-  - At min 2 blueprint folders with
+  At min 2 blueprint folders with
     - [ ] templates_folder (ie auth_templates)
     - [ ] routes.py
   - [ ] static
