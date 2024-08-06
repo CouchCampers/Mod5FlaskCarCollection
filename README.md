@@ -11,22 +11,22 @@ You can also do the whole project and then submit that as a whole after you're a
 Using the steps we covered in class, create the following pages for your Car collection API.
 
 You will need to create the following files/folders:
-  - [ ] Virtual Environment
-  - [ ] Main Package Folder (eg phonebook)
+  - [x] Virtual Environment
+  - [x] Main Package Folder (eg phonebook)
   At min 2 blueprint folders with
-    - [ ] templates_folder (ie auth_templates)
-    - [ ] routes.py
-  - [ ] static
-  - [ ] main_templates_folder (ie templates)
-  - [ ] __init__.py
-  - [ ] config.py
+    - [x] templates_folder (ie auth_templates)
+    - [x] routes.py
+  - [x] static
+  - [x] main_templates_folder (ie templates)
+  - [x] __init__.py
+  - [x] config.py
 
-You will also need to create the flask environment variables we mentioned at the start of class today. You can find instructions on that inside of the reference repo
+- [ ] You will also need to create the flask environment variables we mentioned at the start of class today. You can find instructions on that inside of the reference repo
 
 NOTE/HINT: It may be a good idea to 
-- [ ] create a .gitignore file and place your Virtual Environment inside of that
-- [ ] along with .vscode
-- [ ] and __pycache__ folders.
+- [x] create a .gitignore file and place your Virtual Environment inside of that
+- [ ] along with .vscode ??
+- [x] and __pycache__ folders.
 
 A sample is linked below. If you're on a Mac, add the .DS_Store file as well. 
 
