@@ -1,0 +1,54 @@
+CAR COLLECTION APP (FOLDER)
+This is the overall folder we're working in. All our data for the entire app is inside of this folder.
+
+	APP (FOLDER)
+	The 'app' folder is for the parts of our app that are handling logic, changing things, and generally running the app. The only reason we have some stuff outside the app folder is for ease-of-access (so we don't have to locate them in weird and silly ways later) and because things like the config need to 	happen before we run the app.
+
+		API (FOLDER)
+		This folder is for the rules about how we handle data. If someone wants to look at a contact, this is where that logic will be.
+
+		AUTHENTICATION (FOLDER)
+		This handles login and logout information. Users need to log in to look at API data (only because we made those rules. If you wanted to, you could allow anyone to look at that API data.)
+			ROUTES.PY (FILE)
+
+			AUTHENTICATION_TEMPLATES (FOLDER)
+
+		SITE (BLUEPRINT FOLDER)
+		This is where we handle the logic for loading HTML pages etc. Some apps don't have this section because Flask is usually used for back-end, but for this project, we'll have a little fun with some HTML, too.
+			ROUTES.PY (FILE)
+			This will be where we locate the logic for our web browser to interact with our code.
+
+			SITE_TEMPLATES ()
+				INDEX.HTML (FILE)
+				PROFILE.HTML (FILE)
+
+		STATIC (FOLDER)
+		This is where our images will hide. Not much work to do here.
+
+		TEMPLATES ()
+		This is for pieces of HTML we'll eventually inject or extend in other places. We'll see what that looks like soon.
+			BASE.HTML (FILE)
+			FORMS.HTML (FILE)
+
+		__INIT__.PY (FILE_
+		The init file is what ultimately runs the entire app. Without it, nothing will happen. All the objects we've created - api, authentication, site, etc - come together in the init. It should remind you of the __init__ method from Object Oriented Programming - it's very similar!
+
+	VENV (FOLDER)
+	Enable the specific add-ons that we want to use to run on our app. 
+
+	.ENV (FILE)
+
+	CONFIG.PY (FILE)
+	This operates as a go-between for our app and either the servers we're hosting on (if we deploy it to the internet), or to talk to our 	computer and interface between our app and the command line or terminal (depending on if you're on Mac or Windows).
+
+	FORMS.PY (FILE)
+	This is used to make sure our users only submit the right kinds of data when they're logging in. 
+
+	HELPERS.PY (FILE)
+	This helps us with some other functions, particularly making sure users can log in correctly and that they have the right to access our API 	data.
+
+	MODELS.PY (FILE)
+	These are presets for creating our databases. 
+
+	REQUIREMENTX.TXT (FILE)
+	A plain text document that's got all the information required for the cloud server to create its own virtual environment when you deploy it to the internet.
