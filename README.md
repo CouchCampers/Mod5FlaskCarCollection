@@ -18,7 +18,7 @@ You will need to create the following files/folders:
     - [x] routes.py
   - [x] static
   - [x] main_templates_folder (ie templates)
-  - [x] __init__.py
+  - [x] __ init __.py
   - [x] config.py
 
 - [ ] You will also need to create the flask environment variables we mentioned at the start of class today. You can find instructions on that inside of the reference repo
@@ -31,3 +31,39 @@ NOTE/HINT: It may be a good idea to
 A sample is linked below. If you're on a Mac, add the .DS_Store file as well. 
 
 - [ ] Feel free to style your landing page in whatever suits your personal style. However, you may use our class project as a model/reference if you would like to.
+
+In continuation with this module's homework, your task is to build a form for a user to input data and persist that data into a Car-Collection Database Table Called "user".
+
+You will need to create the following:
+Inside of the blueprint folder for "authentication" (assuming the name is "authentication"):
+  - [ ] One routes: One for "signup"
+  - [ ] One User Model with the basic infomation listed:
+      - [ ]  ID
+      - [ ]  First_name
+      - [ ]  Last_name
+      - [ ]  email
+      - [ ]  password
+      - [ ]  token
+      - [ ]  date_created
+  - [ ] One Form with the following information:
+      - [ ] email
+      - [ ] password
+      - [ ] submit_buttom
+
+  - [ ] One .env file: to add your DATABASE_URL
+
+Note: You may add more to your Form/Model if you would like, but the min is listed above.
+
+So by the end of the homework for tonight you should have:
+- [ ] A Database Called "car-collection" (Create this inside of Elephant SQL)
+- [ ] A Database Table called "user"
+- [ ] A form that can be placed on your HTML for signup
+- [ ] Data in the user table given to your database by the user form
+
+HINT: You will need to add the following dependencies to your virtual environment
+- [ ] pip install Flask-WTF
+- [ ] pip install Flask-Migrate
+- [ ] pip install psycopg2
+- [ ] pip install psycopg2-binary -- For those on mac machines
+- [ ] pip install email-validator -- Verification of emails inside of forms
+- [ ] pip install python-dotenv
